@@ -8,7 +8,7 @@
 
 inline bool EnsureCompatibleOSVersion()
 {
-	if (IsWindows10OrGreater())
+	if (IsWindows10OrGreater() || CfxIsWine())
 	{
 		return true;
 	}
